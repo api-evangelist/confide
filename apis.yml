@@ -1,8 +1,27 @@
 aid: confide
 name: Confide *
-description: 'Confide * is a company surfaced as a portfolio company of gv and added to the API Evangelist
-  network as a stub for enrichment. Sector: consumer. This profile is a lead awaiting the enrichment pipeline.'
+description: 'Confide is a confidential messaging application that lets people communicate
+  digitally with the same level of privacy and security as the spoken word. Messages are
+  end-to-end encrypted, ephemeral (they disappear after being read), and screenshot-protected
+  so recipients cannot capture or forward them. Available on iPhone, iPad, Android, Mac, and
+  Windows across 200+ countries and 15 languages, with a free tier for individuals and small
+  groups and a Confide Plus subscription that unlocks unlimited attachments, message retraction,
+  incognito mode, nicknames, and themes. Confide is a consumer product and does not currently
+  publish a public developer API, SDK, or developer portal; this profile is maintained as a
+  company record backed by GV in the API Evangelist network.'
 url: https://raw.githubusercontent.com/api-evangelist/confide/refs/heads/main/apis.yml
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://static.getconfide.com/media/full/confide-logo-dark.png
 x-type: company
 x-source: vc-portfolio
 x-backed-by:
@@ -11,10 +30,16 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-18'
 tags:
 - Company
 - Consumer
+- Messaging
+- Encryption
+- Privacy
+- Security
+- Mobile
+- Communication
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -22,5 +47,22 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/confide-domain-security.yml
 - type: Website
-  url: http://www.getconfide.com
+  url: https://getconfide.com
+- type: Support
+  url: https://support.getconfide.com/hc/en-us
+- type: Pricing
+  url: https://getconfide.com/products
+- type: SignUp
+  url: https://getconfide.com/download
+- type: TermsOfService
+  url: https://getconfide.com/terms
+- type: PrivacyPolicy
+  url: https://getconfide.com/privacy
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence
